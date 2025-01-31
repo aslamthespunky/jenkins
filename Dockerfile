@@ -1,4 +1,6 @@
-FROM python:3
+FROM python:3.11
+
+RUN apt-get update && apt-get install -y python3-pip python3-venv
 
 WORKDIR /data
 
